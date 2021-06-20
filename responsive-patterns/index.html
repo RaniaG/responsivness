@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Patterns</title>
+</head>
+
+<body>
+    <section>
+        <h2>Column drop</h2>
+        <div class="col-drop-container">
+            <div class="col-1 blue">first column</div>
+            <div class="col-2 green">second column</div>
+            <div class="col-3 yellow">third column</div>
+        </div>
+    </section>
+    <section>
+        <h2>Mostly Fluid</h2>
+        <div class="mostly-fluid-container">
+            <div class="col-1 blue">first column</div>
+            <div class="col-2 green">second column</div>
+            <div class="col-3 yellow">third column</div>
+            <div class="col-4 red">forth column</div>
+            <div class="col-5 lightblue">fifth column</div>
+        </div>
+    </section>
+    <section>
+        <h2>Layout Shifter</h2>
+        <div class="layout-shifter">
+            <div class="col-1 blue">first column</div>
+            <div class="col-2">
+                <div class="sub-col-1 green">second column</div>
+                <div class="sub-col-2 yellow">third column</div>
+            </div>
+            <div class="col-3 red">forth column</div>
+        </div>
+    </section>
+    <section>
+        <h2>Off Canvas</h2>
+        <div class="off-canvas">
+            <div class="side-menu lightblue">off canvas</div>
+            <div class="main-content blue">
+                <button id="toggle-side-menu">Toggle Menu</button> body
+            </div>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+
+</html>

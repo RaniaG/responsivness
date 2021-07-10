@@ -64,8 +64,6 @@
         max-width: 100%;
         overflow: scroll;
     }
-    .snippet p,
-    .hero p,
     .top-news li {
         white-space: nowrap;
         overflow: hidden;
@@ -84,6 +82,9 @@
     .weather {
         order: 1;
         width: 40%;
+    }
+    .header__title {
+        font-size: 2.5em;
     }
 }
 
@@ -113,4 +114,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.snippet p,
+.hero p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

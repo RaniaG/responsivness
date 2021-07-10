@@ -13,6 +13,7 @@
 .weather,
 .recent-news {
     order: 10;
+    width: 100%;
 }
 
 @media screen and (max-width: 549px) {
@@ -62,6 +63,11 @@
     .scores {
         max-width: 100%;
         overflow: scroll;
+    }
+    .snippet p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 

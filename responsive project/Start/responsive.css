@@ -64,10 +64,15 @@
         max-width: 100%;
         overflow: scroll;
     }
-    .snippet p {
+    .snippet p,
+    .hero p,
+    .top-news li {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    footer a {
+        padding: 0;
     }
 }
 

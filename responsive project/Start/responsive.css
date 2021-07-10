@@ -16,6 +16,11 @@
     width: 100%;
 }
 
+.snippet {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 549px) {
     .header__logo {
         height: 48px;
@@ -62,7 +67,7 @@
     }
     .scores {
         max-width: 100%;
-        overflow: scroll;
+        overflow-x: auto;
     }
     .top-news li {
         white-space: nowrap;
@@ -78,6 +83,7 @@
     .hero {
         order: 0;
         width: 60%;
+        height: auto;
     }
     .weather {
         order: 1;
@@ -85,6 +91,10 @@
     }
     .header__title {
         font-size: 2.5em;
+    }
+    .top-news {
+        max-height: max-content;
+        height: auto;
     }
 }
 
@@ -99,26 +109,51 @@
     .scores {
         order: 2;
         width: 60%;
+        overflow-x: auto;
     }
     .weather {
         order: 3;
+    }
+    .weather .weather__next__image {
+        max-width: 60px;
     }
 }
 
 @media screen and (min-width: 850px) {
     main,
-    .header__inner,
-    .nav,
-    .content {
-        width: 100%;
+    .header__inner {
+        max-width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
+    .content {
+        width: 100%;
+    }
+    .nav {
+        width: 70%;
+    }
 }
 
-.snippet p,
-.hero p {
-    white-space: nowrap;
+.snippet__title {
+    width: 100%;
+    order: 0;
+}
+
+.snippet__thumbnail {
+    width: 30%;
+    max-width: 200px;
+    order: 1;
+}
+
+.snippet p {
+    width: 60%;
+    flex-grow: 1;
+    order: 2;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-height: 3.5em;
+}
+
+.hero .description {
+    height: auto;
 }

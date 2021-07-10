@@ -59,6 +59,10 @@
     .weather__next__image {
         max-width: 50px;
     }
+    .scores {
+        max-width: 100%;
+        overflow: scroll;
+    }
 }
 
 @media screen and (min-width: 550px) {

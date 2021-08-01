@@ -18,6 +18,31 @@
         .calc img:first {
             margin-right: 10px;
         }
+        
+        img.view-height {
+            height: 100vh;
+            /* each vh unit corresponds to 1% of view window height*/
+        }
+        
+        img.view-width {
+            width: 100vw;
+            /* each vw unit corresponds to 1% of view window width*/
+        }
+        
+        img.view-height-width-min {
+            height: 100vmin;
+            width: 100vmin;
+            /* this will use the set the property with the minimum of view height and view midth
+            meaning if view window is 600*1000 so the min is 600.*/
+        }
+        
+        img.view-height-width-max {
+            height: 100vmax;
+            width: 100vmax;
+            /* this will use the set the property with the max of view height and view midth
+            meaning if view window is 600*1000 so the max is 1000.
+            this will cover the entire screen*/
+        }
     </style>
 </head>
 
@@ -29,7 +54,15 @@
         <img src="assets/horse1.jpg" alt="">
         <img src="assets/giraffe.jpg" alt="">
     </div>
-
+    <div class="view-height-width">
+        <img src="assets/horse1.jpg" alt="" class="view-height">
+        <br>
+        <img src="assets/horse1.jpg" alt="" class="view-width">
+        <br>
+        <img src="assets/horse1.jpg" alt="" class="view-height-width-min">
+        <br>
+        <img src="assets/horse1.jpg" alt="" class="view-height-width-max">
+    </div>
 </body>
 
 </html>

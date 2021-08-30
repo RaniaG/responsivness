@@ -1,27 +1,30 @@
-/*
- After you have changed the settings at "Your code goes here",
- run this with one of these options:
-  "grunt" alone creates a new, completed images directory
-  "grunt clean" removes the images directory
-  "grunt responsive_images" re-processes images without removing the old ones
-*/
-
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     responsive_images: {
       dev: {
         options: {
           engine: 'im',
-          sizes: [{
-            /*
-            Change these:
-            
-            width: ,
-            suffix: ,
-            quality:
-            */
-          }]
+          sizes: [
+            // {
+            //   name: 'med',
+            //   width: 800,
+            // },
+            {
+              name: 'med_60_quality',
+              width: 800,
+              quality: 60
+            },
+            // {
+            //   name: 'large',
+            //   width: 1040,
+            // },
+            // {
+            //   name: 'large_60_quality',
+            //   width: 1040,
+            //   quality: 60
+            // }
+          ]
         },
 
         /*
@@ -64,7 +67,6 @@ module.exports = function(grunt) {
       },
     },
   });
-  
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');

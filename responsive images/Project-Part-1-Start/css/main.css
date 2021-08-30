@@ -12,18 +12,25 @@ I've left some boilerplate below for you.
 
 */
 
-body {
-
-}
+body {}
 
 article {
-
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 h1 {
-
+    text-align: center;
 }
 
-img {
+img.full {
+    width: 100%;
+}
 
+img.footer {
+    max-width: 100%;
+}
+
+figure {
+    text-align: center;
 }

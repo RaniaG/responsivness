@@ -19,11 +19,11 @@ module.exports = function (grunt) {
             //   name: 'large',
             //   width: 1040,
             // },
-            // {
-            //   name: 'large_60_quality',
-            //   width: 1040,
-            //   quality: 60
-            // }
+            {
+              name: 'large_60_quality',
+              width: 1040,
+              quality: 60
+            }
           ]
         },
 

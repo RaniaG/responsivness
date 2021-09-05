@@ -43,6 +43,16 @@
             meaning if view window is 600*1000 so the max is 1000.
             this will cover the entire screen*/
         }
+        
+        .srcset-sizes-not-full-width img {
+            width: 50vw;
+        }
+        
+        @media screen and (max-width:500px) {
+            .srcset-sizes-not-full-width img {
+                width: 100vw;
+            }
+        }
     </style>
 </head>
 
@@ -62,6 +72,35 @@
         <img src="assets/horse1.jpg" alt="" class="view-height-width-min">
         <br>
         <img src="assets/horse1.jpg" alt="" class="view-height-width-max">
+    </div>
+    <div class="srcset">
+        <img srcset="assets/kangaroo_small.jpg 500w,
+                    assets/kangaroo_medium.jpg 1000w,
+                    assets/kangaroo_large.jpg 1500w" src="kangaroo_large.jpg" alt="kangaroo">
+        <img srcset="
+                    assets/kangaroo_medium.jpg 1x,
+                    assets/kangaroo_large.jpg 2x" src="kangaroo_large.jpg" alt="kangaroo">
+    </div>
+    <div class="srcset-sizes">
+        <img srcset="assets/elva-fairy-480w.jpg 480w,
+             assets/elva-fairy-800w.jpg 800w" sizes="(max-width: 600px) 480w,
+                800w" src="assets/elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+    </div>
+    <div class="srcset-sizes-not-full-width">
+        <img srcset="assets/cockatoos-med.jpg 800w,
+             assets/cockatoos-large.jpg 1040w" sizes="(max-width: 500px) 100vw,
+                50vw" src="assets/cockatoos-large.jpg" alt="Cocatoos">
+    </div>
+    <div class="source-webp">
+        <picture>
+            <source media="(min-width: 650px)" srcset="assets/kitten-large.png">
+            <source media="(min-width: 465px)" srcset="assets/kitten-medium.png">
+            <img src="assets/kitten-small.png" alt="Cute kitten">
+        </picture>
+        <picture>
+            <source srcset="assets/kittens.webp" type="image/webp">
+            <img src="assets/kitten-medium.png" alt="Two grey tabby kittens">
+        </picture>
     </div>
 </body>
 

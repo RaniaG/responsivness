@@ -1,0 +1,60 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+article {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+img.full {
+    width: 100%;
+}
+
+img.footer {
+    max-width: 100%;
+}
+
+figure {
+    text-align: center;
+}
+
+a.link img {
+    width: 40px;
+}
+
+img.logo {
+    max-width: 80px;
+    width: 10%;
+}
+
+@media screen and (max-width:600px) {
+    article {
+        max-width: 100%;
+    }
+    figure {
+        margin: 0;
+    }
+}
